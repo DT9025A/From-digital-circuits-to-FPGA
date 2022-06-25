@@ -1,5 +1,6 @@
 */par/db
 */par/incremental_db
 */par/output_files
+*/sim
 *.qws
 *.bak
