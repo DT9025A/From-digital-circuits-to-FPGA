@@ -53,6 +53,10 @@ N(ES)：无铅（工程样片）
 |rtl|Verilog代码|
 |sim|仿真文件|
 
+## HDLBits的练习代码
+[HDLBits](https://hdlbits.01xz.net/wiki/Main_Page)
+
+代码位于HDLBits目录下，按照章节目录分开
 
 ## 参考书目
 
