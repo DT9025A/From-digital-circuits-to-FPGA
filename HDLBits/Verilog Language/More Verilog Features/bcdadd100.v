@@ -26,7 +26,7 @@ module top_module(
 	generate
 		genvar i;
 		
-		for (i = 1; i < 99; i++) begin: bcdadd100
+		for (i = 1; i < 99; i++) begin : add_100
 			bcd_fadd u_bcd_fadd(a[i * 4 + 3: i * 4], b[i * 4 + 3: i * 4], carry[i - 1], carry[i], sum[i * 4 + 3: i * 4])
 		end
 	endgenerate
