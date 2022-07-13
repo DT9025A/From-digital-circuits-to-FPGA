@@ -1,0 +1,12 @@
+{F:/GitHub/From-digital-circuits-to-FPGA/HDLBits/Circuits/Sequential Logic/Counters/sim/top_module.v} {0 {vlog -work work -vopt -stats=none {F:/GitHub/From-digital-circuits-to-FPGA/HDLBits/Circuits/Sequential Logic/Counters/sim/top_module.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module top_module
+-- Compiling module cnt
+** Error: F:/GitHub/From-digital-circuits-to-FPGA/HDLBits/Circuits/Sequential Logic/Counters/sim/top_module.v(48): (vlog-2110) Illegal reference to net "carry".
+
+** Error: F:/GitHub/From-digital-circuits-to-FPGA/HDLBits/Circuits/Sequential Logic/Counters/sim/top_module.v(54): (vlog-2110) Illegal reference to net "carry".
+
+** Error: F:/GitHub/From-digital-circuits-to-FPGA/HDLBits/Circuits/Sequential Logic/Counters/sim/top_module.v(58): (vlog-2110) Illegal reference to net "carry".
+
+
+} {5.0 6.0 7.0 8.0 9.0 10.0} {}}

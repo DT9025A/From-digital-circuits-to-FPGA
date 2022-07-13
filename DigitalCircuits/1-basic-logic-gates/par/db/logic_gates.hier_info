@@ -1,0 +1,22 @@
+|logic_gates
+k0 => k0.IN1
+k1 => k1.IN1
+k2 => k2.IN1
+k3 => k3.IN1
+l0 <= not_and_or_gate:u_not_and_or_gate.l0
+l1 <= not_and_or_gate:u_not_and_or_gate.l1
+l2 <= not_and_or_gate:u_not_and_or_gate.l2
+l3 <= <GND>
+
+
+|logic_gates|not_and_or_gate:u_not_and_or_gate
+k0 => l0.DATAIN
+k1 => l1.IN0
+k2 => l1.IN1
+k2 => l2.IN0
+k3 => l2.IN1
+l0 <= k0.DB_MAX_OUTPUT_PORT_TYPE
+l1 <= l1.DB_MAX_OUTPUT_PORT_TYPE
+l2 <= l2.DB_MAX_OUTPUT_PORT_TYPE
+
+

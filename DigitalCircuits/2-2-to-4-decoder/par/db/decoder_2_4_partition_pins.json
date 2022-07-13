@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "decode[0]",
+					"strict" : false
+				},
+				{
+					"name" : "decode[1]",
+					"strict" : false
+				},
+				{
+					"name" : "decode[2]",
+					"strict" : false
+				},
+				{
+					"name" : "decode[3]",
+					"strict" : false
+				},
+				{
+					"name" : "k0",
+					"strict" : false
+				},
+				{
+					"name" : "k1",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

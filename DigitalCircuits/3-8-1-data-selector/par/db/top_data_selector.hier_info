@@ -1,0 +1,30 @@
+|top_data_selector
+dat[0] => dat[0].IN1
+dat[1] => dat[1].IN1
+dat[2] => dat[2].IN1
+dat[3] => dat[3].IN1
+dat[4] => dat[4].IN1
+dat[5] => dat[5].IN1
+dat[6] => dat[6].IN1
+dat[7] => dat[7].IN1
+addr[0] => addr[0].IN1
+addr[1] => addr[1].IN1
+addr[2] => addr[2].IN1
+out << case_data_selector:u_data_selector.out
+
+
+|top_data_selector|case_data_selector:u_data_selector
+dat[0] => Mux0.IN7
+dat[1] => Mux0.IN6
+dat[2] => Mux0.IN5
+dat[3] => Mux0.IN4
+dat[4] => Mux0.IN3
+dat[5] => Mux0.IN2
+dat[6] => Mux0.IN1
+dat[7] => Mux0.IN0
+addr[0] => Mux0.IN10
+addr[1] => Mux0.IN9
+addr[2] => Mux0.IN8
+out <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
