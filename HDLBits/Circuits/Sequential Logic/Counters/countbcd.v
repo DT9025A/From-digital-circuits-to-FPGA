@@ -18,7 +18,7 @@ endmodule
 module bcd_cnt (
     input clk,
     input reset,        // Synchronous active-high reset
-	input ena,
+    input ena,
     output [3:0] q);
 
     reg [3:0] acc;

@@ -4,14 +4,14 @@
 
 module top_module ( input a, input b, output out );
 
-	// method 1:
-	mod_a u_mod_a(a, b, out);
-	
-	// method 2:
-	mod_a u_mod_a(
-		.in2(b),
-		.in1(a),
-		.out(out)
-	);
-	
+    // method 1:
+    mod_a u_mod_a(a, b, out);
+    
+    // method 2:
+    mod_a u_mod_a(
+        .in2(b),
+        .in1(a),
+        .out(out)
+    );
+    
 endmodule

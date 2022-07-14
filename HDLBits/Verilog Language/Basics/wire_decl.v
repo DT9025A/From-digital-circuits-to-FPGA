@@ -11,15 +11,15 @@ module top_module(
     output out,
     output out_n   ); 
 
-	// internal wire declare
-	wire int_and1, int_and2;
-	
-	// wire logic
-	assign int_and1 = a & b;
-	assign int_and2 = c & d;
-	
-	// out logic
-	assign out = int_and1 | int_and2;
-	assign out_n = !out;
-	
+    // internal wire declare
+    wire int_and1, int_and2;
+    
+    // wire logic
+    assign int_and1 = a & b;
+    assign int_and2 = c & d;
+    
+    // out logic
+    assign out = int_and1 | int_and2;
+    assign out_n = !out;
+    
 endmodule

@@ -5,7 +5,7 @@ module top_module(
     output f   // one output
 );
 
-	// use Karnaugh map to simplify
-	assign f = (!x3 & x2) | (x3 & x1);
+    // use Karnaugh map to simplify
+    assign f = (!x3 & x2) | (x3 & x1);
 
 endmodule

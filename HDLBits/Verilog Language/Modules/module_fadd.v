@@ -16,20 +16,20 @@ module top_module (
     output [31:0] sum
 );//
 
-	wire [15:0] lo_result, hi_result;
-	wire lo_cout;
-	
-	assign sum = {hi_result, lo_result};
-	
-	add16 u_add16_lo(a[15:0], b[15:0], 0, lo_result, lo_cout);
-	add16 u_add16_hi(a[31:16], b[31:16], lo_cout, hi_result);
+    wire [15:0] lo_result, hi_result;
+    wire lo_cout;
+    
+    assign sum = {hi_result, lo_result};
+    
+    add16 u_add16_lo(a[15:0], b[15:0], 0, lo_result, lo_cout);
+    add16 u_add16_hi(a[31:16], b[31:16], lo_cout, hi_result);
 
 endmodule
 
 module add1 ( input a, input b, input cin, output sum, output cout );
 
-	// Full adder module here
-	assign sum = a ^ b ^ cin;
-	assign cout = (a & b) | ((a ^ b) & cin);
+    // Full adder module here
+    assign sum = a ^ b ^ cin;
+    assign cout = (a & b) | ((a ^ b) & cin);
 
 endmodule

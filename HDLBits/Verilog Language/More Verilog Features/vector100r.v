@@ -7,11 +7,11 @@ module top_module(
     output [99:0] out
 );
 
-	integer i;
-	
-	always @(*) begin
-		for(i = 0; i < 100; i++)
-			out[i] = in[99 - i];
-	end
+    integer i;
+    
+    always @(*) begin
+        for(i = 0; i < 100; i++)
+            out[i] = in[99 - i];
+    end
 
 endmodule

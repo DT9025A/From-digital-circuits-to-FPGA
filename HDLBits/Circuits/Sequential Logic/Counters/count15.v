@@ -3,7 +3,7 @@ module top_module (
     input reset,      // Synchronous active-high reset
     output [3:0] q);
 
-	reg [3:0] acc;
+    reg [3:0] acc;
     initial acc = 0;
     assign q = acc;
     
@@ -11,7 +11,7 @@ module top_module (
         if (reset)
             acc = 4'd0;
         else
-        	acc += 1'd1;
+            acc += 1'd1;
     end
-	
+    
 endmodule

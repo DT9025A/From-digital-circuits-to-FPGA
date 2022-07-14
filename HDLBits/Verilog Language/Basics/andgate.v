@@ -7,6 +7,6 @@ module top_module(
     input b, 
     output out );
 
-	assign out = a & b;
-	
+    assign out = a & b;
+    
 endmodule

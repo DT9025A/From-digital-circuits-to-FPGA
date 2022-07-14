@@ -6,20 +6,20 @@ module top_module (
     output [15:0] q
 );
 
-	always @(posedge clk) begin
-		if (!resetn)
-			q[15:0] <= 8'h0;
-		else begin
-			if (byteena[0])
-				q[7:0] <= d[7:0];
-			else
-				q[7:0] <= q[7:0];
+    always @(posedge clk) begin
+        if (!resetn)
+            q[15:0] <= 8'h0;
+        else begin
+            if (byteena[0])
+                q[7:0] <= d[7:0];
+            else
+                q[7:0] <= q[7:0];
 
-			if (byteena[1])
-				q[15:8] <= d[15:8];
-			else
-				q[15:8] <= q[15:8];
-		end
-	end
+            if (byteena[1])
+                q[15:8] <= d[15:8];
+            else
+                q[15:8] <= q[15:8];
+        end
+    end
 
 endmodule

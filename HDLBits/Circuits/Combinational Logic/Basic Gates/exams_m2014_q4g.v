@@ -4,6 +4,6 @@ module top_module (
     input in3,
     output out);
 
-	assign out = (!(in1 ^ in2) ^ in3);
-	
+    assign out = (!(in1 ^ in2) ^ in3);
+    
 endmodule

@@ -15,20 +15,20 @@ module top_module(
     output cout,
     output [399:0] sum );
 
-	// to save carry from provious instance
-	wire [98:0] carry;
-	
-	// first and last instance, indicates cin and cout
-	bcd_fadd u_bcd_fadd_0(a[3:0], b[3:0], cin, carry[0], sum[3:0]);
-	bcd_fadd u_bcd_fadd_99(a[399:396], b[399:396], carry[98], cout, sum[399:396]);
-	
-	// use "generate" to generate instances
-	generate
-		genvar i;
-		
-		for (i = 1; i < 99; i++) begin : add_100
-			bcd_fadd u_bcd_fadd(a[i * 4 + 3: i * 4], b[i * 4 + 3: i * 4], carry[i - 1], carry[i], sum[i * 4 + 3: i * 4])
-		end
-	endgenerate
-	
+    // to save carry from provious instance
+    wire [98:0] carry;
+    
+    // first and last instance, indicates cin and cout
+    bcd_fadd u_bcd_fadd_0(a[3:0], b[3:0], cin, carry[0], sum[3:0]);
+    bcd_fadd u_bcd_fadd_99(a[399:396], b[399:396], carry[98], cout, sum[399:396]);
+    
+    // use "generate" to generate instances
+    generate
+        genvar i;
+        
+        for (i = 1; i < 99; i++) begin : add_100
+            bcd_fadd u_bcd_fadd(a[i * 4 + 3: i * 4], b[i * 4 + 3: i * 4], carry[i - 1], carry[i], sum[i * 4 + 3: i * 4])
+        end
+    endgenerate
+    
 endmodule

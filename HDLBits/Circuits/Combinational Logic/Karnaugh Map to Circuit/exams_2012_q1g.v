@@ -3,6 +3,6 @@
     output f
 ); 
 
-	assign f = (!x[1] & x[3]) | (!x[2] & !x[4]) | &x;
+    assign f = (!x[1] & x[3]) | (!x[2] & !x[4]) | &x;
 
 endmodule

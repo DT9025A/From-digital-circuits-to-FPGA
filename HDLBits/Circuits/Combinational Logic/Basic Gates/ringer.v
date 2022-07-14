@@ -5,7 +5,7 @@
     output motor         // Vibrate
 );
 
-	assign ringer = ring & !vibrate_mode;
-	assign motor = ring & vibrate_mode;
+    assign ringer = ring & !vibrate_mode;
+    assign motor = ring & vibrate_mode;
 
 endmodule

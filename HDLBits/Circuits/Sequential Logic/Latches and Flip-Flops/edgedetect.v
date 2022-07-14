@@ -4,11 +4,11 @@ module top_module (
     output [7:0] pedge
 );
 
-	reg [7:0] last;
-	
-	always @(posedge clk) begin
-		last <= in;
-		pedge <= in & ~last;
-	end
+    reg [7:0] last;
+    
+    always @(posedge clk) begin
+        last <= in;
+        pedge <= in & ~last;
+    end
 
 endmodule

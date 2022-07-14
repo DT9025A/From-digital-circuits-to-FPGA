@@ -6,11 +6,11 @@ module top_module (
     input [7:0] a, b, c, d,
     output [7:0] min);//
 
-	wire [7:0] s1, s2;
-	
+    wire [7:0] s1, s2;
+    
     // assign intermediate_result1 = compare? true: false;
-	assign s1 = a < b ? a : b;
-	assign s2 = c < d ? c : d;
-	assign min = s1 < s2 ? s1 : s2;
+    assign s1 = a < b ? a : b;
+    assign s2 = c < d ? c : d;
+    assign min = s1 < s2 ? s1 : s2;
 
 endmodule

@@ -12,13 +12,13 @@ module top_module(
     output [31:0] sum
 );
 
-	wire[15:0] lo_result, hi_result_ci1, hi_result_ci0;
-	wire lo_cout;
-	
-	assign sum = lo_cout ? {hi_result_ci1, lo_result} : {hi_result_ci0, lo_result};
-	
-	add16 u_add16_lo(a[15:0], b[15:0], 0, lo_result, lo_cout);
-	add16 u_add16_hi_ci0(a[31:16], b[31:16], 0, hi_result_ci0);
-	add16 u_add16_hi_ci1(a[31:16], b[31:16], 1, hi_result_ci1);
+    wire[15:0] lo_result, hi_result_ci1, hi_result_ci0;
+    wire lo_cout;
+    
+    assign sum = lo_cout ? {hi_result_ci1, lo_result} : {hi_result_ci0, lo_result};
+    
+    add16 u_add16_lo(a[15:0], b[15:0], 0, lo_result, lo_cout);
+    add16 u_add16_hi_ci0(a[31:16], b[31:16], 0, hi_result_ci0);
+    add16 u_add16_hi_ci1(a[31:16], b[31:16], 1, hi_result_ci1);
 
 endmodule

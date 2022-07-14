@@ -10,10 +10,10 @@ module top_module(
     output reg out_alwaysblock
 );
 
-	assign out_assign = a & b;
-	
-	always @(*) begin
-		out_alwaysblock = a & b;
-	end
+    assign out_assign = a & b;
+    
+    always @(*) begin
+        out_alwaysblock = a & b;
+    end
 
 endmodule

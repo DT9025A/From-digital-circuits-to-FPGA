@@ -13,14 +13,14 @@ module top_module(
     output [31:0] sum
 );
 
-	wire [31:0] pb;
-	wire [15:0] lo_result, hi_result;
-	wire lo_cout;
-	
-	assign pb = {32{sub}} ^ b;
-	assign sum = {hi_result, lo_result};
-	
-	add16 u_add16_lo(a[15:0], pb[15:0], sub, lo_result, lo_cout);
-	add16 u_add16_hi(a[31:16], pb[31:16], lo_cout, hi_result);
+    wire [31:0] pb;
+    wire [15:0] lo_result, hi_result;
+    wire lo_cout;
+    
+    assign pb = {32{sub}} ^ b;
+    assign sum = {hi_result, lo_result};
+    
+    add16 u_add16_lo(a[15:0], pb[15:0], sub, lo_result, lo_cout);
+    add16 u_add16_hi(a[31:16], pb[31:16], lo_cout, hi_result);
 
 endmodule

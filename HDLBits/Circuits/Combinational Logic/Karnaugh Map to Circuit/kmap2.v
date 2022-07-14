@@ -5,6 +5,6 @@ module top_module(
     input d,
     output out  ); 
 
-	assign out = (!b & !c) | (!a & !c & !d) | (a & c & d) | (!a & b & c) | (!a & c & !d);
-	
+    assign out = (!b & !c) | (!a & !c & !d) | (a & c & d) | (!a & b & c) | (!a & c & !d);
+    
 endmodule

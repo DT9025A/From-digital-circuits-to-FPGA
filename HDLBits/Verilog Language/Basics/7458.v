@@ -8,18 +8,18 @@ module top_module (
     input p2a, p2b, p2c, p2d,
     output p2y );
 
-	// wire declares
-	wire int_p1abc, int_p1def;
-	wire int_p2ab, int_p2cd;
-	
-	// internal logic assigns
-	assign int_p1abc = p1a & p1b & p1c;
-	assign int_p1def = p1d & p1e & p1f;
-	assign int_p2ab = p2a & p2b;
-	assign int_p2cd = p2c & p2d;
-	
-	// output logic assign
-	assign p1y = int_p1abc | int_p1def;
-	assign p2y = int_p2ab | int_p2cd;
+    // wire declares
+    wire int_p1abc, int_p1def;
+    wire int_p2ab, int_p2cd;
+    
+    // internal logic assigns
+    assign int_p1abc = p1a & p1b & p1c;
+    assign int_p1def = p1d & p1e & p1f;
+    assign int_p2ab = p2a & p2b;
+    assign int_p2cd = p2c & p2d;
+    
+    // output logic assign
+    assign p1y = int_p1abc | int_p1def;
+    assign p2y = int_p2ab | int_p2cd;
 
 endmodule

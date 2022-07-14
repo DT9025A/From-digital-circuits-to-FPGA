@@ -8,8 +8,8 @@ module top_module (
     output fan
 ); 
 
-	assign heater = too_cold & mode;
-	assign aircon = too_hot & !mode;
-	assign fan = heater | aircon | fan_on;
+    assign heater = too_cold & mode;
+    assign aircon = too_hot & !mode;
+    assign fan = heater | aircon | fan_on;
 
 endmodule

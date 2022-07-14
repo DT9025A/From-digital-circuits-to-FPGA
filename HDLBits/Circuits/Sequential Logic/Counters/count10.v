@@ -14,7 +14,7 @@ module top_module (
             if (acc == 4'd9)
                 acc = 4'd0;
             else
-        		acc += 1'd1;
+                acc += 1'd1;
         end
     end
     

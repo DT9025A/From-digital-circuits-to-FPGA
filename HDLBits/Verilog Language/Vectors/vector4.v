@@ -7,7 +7,7 @@ module top_module (
     output [31:0] out );
 
     // assign out = { replicate-sign-bit , the-input };
-	assign out = {{24{in[7]}}, in};
-	//syntax：{num{vector}} = {{vector}, {vector}....(num times)}
+    assign out = {{24{in[7]}}, in};
+    //syntax：{num{vector}} = {{vector}, {vector}....(num times)}
 
 endmodule

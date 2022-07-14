@@ -11,17 +11,17 @@ module top_module(
     output wire out_assign,
     output reg out_always   ); 
 
-	// assign
-	assign out_assign = (sel_b1 & sel_b2) ? b : a;
-	
-	// always
-	always @(*) begin
-		if(sel_b1 & sel_b2) begin
-			out_always = b;
-		end
-		else begin
-			out_always = a;
-		end
-	end
-	
+    // assign
+    assign out_assign = (sel_b1 & sel_b2) ? b : a;
+    
+    // always
+    always @(*) begin
+        if(sel_b1 & sel_b2) begin
+            out_always = b;
+        end
+        else begin
+            out_always = a;
+        end
+    end
+    
 endmodule

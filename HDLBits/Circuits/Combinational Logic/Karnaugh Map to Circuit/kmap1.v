@@ -3,7 +3,7 @@ module top_module(
     input b,
     input c,
     output out  ); 
-	
-	assign out = a | c | b;
+    
+    assign out = a | c | b;
 
 endmodule

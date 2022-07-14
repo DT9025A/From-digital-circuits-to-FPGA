@@ -4,7 +4,7 @@ module top_module (
     output [7:0] q
 );
 
-	always @(posedge clk)
-		q[7:0] <= d[7:0];
+    always @(posedge clk)
+        q[7:0] <= d[7:0];
 
 endmodule
